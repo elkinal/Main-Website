@@ -1,0 +1,20 @@
+.row, .card {
+    padding:0;
+    margin:0;
+}
+.col-xl-4 {
+    padding:10px;
+}
+#row-1 {
+    padding:10px;
+}
+.card-btn-group {
+    position:absolute;
+    bottom:20px;
+}
+.card {
+    height:100%;
+}
+.card-text {
+    margin-bottom:50px;
+}
