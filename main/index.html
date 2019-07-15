@@ -3,12 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" href="main.css">
     <title>Alexey Elkin Software</title>
 </head>
 <body>
     <div class="cover">
-        <div class="row" id="row-1">
+        <!-- Front Cover -->
+
+        <!-- Row Showcasing Projects -->
+        <div class="row">
             <!-- First Card -->
             <div class="col-xl-4" id="project-1">
                 <div class="card">
@@ -69,8 +75,38 @@
                     </div>
                 </div>
             </div>
+        </div>
+        <!-- Tentacles -->
+        <div class="row" id="row-2">
+            <!-- First Card -->
+            <div class="col-xl-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h2 class="card-title">Feedback</h2>
+                        <p class="card-text">If you would like to post any feedback, please feel free to use this form.
+                            I will also be very grateful if you spot any <code>bugs</code> / <code>errors</code> in my code. I will do my best so solve any
+                            bugs in my code quicky to provide the best user experience possible</p>
+                        <h4>Details</h4>
+                        <form action="feedback.php" method="post">
+                            <div class="form-group">
+                                <label for="email">Email:</label>
+                                <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                            </div>
+                            <div class="form-group">
+                                <label for="feedback">Message:</label>
+                                <input type="text" class="form-control" id="feedback" placeholder="Enter Message" name="message">
+                            </div>
+                            <button type="submit" class="btn btn-success">Submit</button>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+    <footer class="footer">
+        <div class="container-fluid" id="footer-container">
+            <span class="text-muted">Created by Alexey Elkin</span>
+        </div>
+    </footer>
 </body>
 </html>
